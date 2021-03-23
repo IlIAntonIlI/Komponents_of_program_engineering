@@ -2,8 +2,8 @@
 #include <string>
 #include "Product.h"
 #include "Scanner.h"
-#include "CasaController.h"
 #include "Database.h"
+#include "CasaController.h"
 using namespace std;
 
 int main()

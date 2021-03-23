@@ -22,7 +22,7 @@ public:
         }
    }
 
-   void deleteProductFromCheck (int numInCheck)
+   void deleteProductFromCheck (int numInCheck, Datebase datebase)
    {
         check.erase(numInCheck-1);
         datebase.changeNumOfProducts(code,false);
