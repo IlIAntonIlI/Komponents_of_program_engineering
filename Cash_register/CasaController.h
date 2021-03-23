@@ -3,29 +3,32 @@
 using namespace std;
 class CasaController
 {
-    vector<Product> check;
     int code;
 public:
+   vector<Product> check;
    void addProductToCheck(int code, Database database, Display display)
    {
-        if (database.isProductExist())
+        if (database.isProductExist(code))
         {
             Product bufer;
-            bufer.nameProduct = database.getName(code);
-            bufer.price = datebase.getPrice(code);
+            bufer.nameProduct = database.getNameProduct(code);
+            bufer.price = database.getPrice(code);
             check.push_back(bufer);
-            datebase.changeNumOfProducts(code,true);
+            database.changeNumOfProducts(code,true);
         }
         else
         {
             display.existMessage(false);
         }
+        display.showCheck(check);
    }
 
-   void deleteProductFromCheck (int numInCheck, Datebase datebase)
+   void deleteProductFromCheck (int numInCheck, Database database, Display display)
    {
-        check.erase(numInCheck-1);
-        datebase.changeNumOfProducts(code,false);
+        auto iter = check.cbegin();
+        check.erase(iter+numInCheck-1);
+        database.changeNumOfProducts(code,false);
+        display.showCheck(check);
    }
 
 };

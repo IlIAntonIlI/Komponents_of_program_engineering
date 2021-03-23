@@ -5,18 +5,22 @@ class Display
 public:
     void showPrice(int code, Database database)
     {
-        cout<<"Price: "database.getPrice(code) <<"\n";
+        cout<<"Price: "<<database.getPrice(code) <<"\n";
     }
     void showCheck(vector<Product>& check)
     {
         int sum=0;
-        cout<<"Check:\n"
+        cout<<"==============================================================================="<<endl;
+        cout<<"==============================================================================="<<endl;
+        cout<<"Check:\n";
         for (int i=0; i<check.size();i++)
         {
              cout<<i+1 <<") " << check[i].nameProduct <<"-->" <<check[i].price <<" UAH.\n";
              sum=sum+check[i].price;
         }
-        cout<<"\t Full cost: " <<sum;
+        cout<<"\t Full cost: " <<sum<<endl;
+        cout<<"==============================================================================="<<endl;
+        cout<<"==============================================================================="<<endl<<endl;
     }
     void existMessage(bool exist)
     {
@@ -27,7 +31,7 @@ public:
     }
     void noEnoughMoney ()
     {
-        cout<<"No enough money, pls enter more money or delete some products!";
+        cout<<"No enough money, pls enter more money or delete some products! Write 1 - enter more money or 0 - delete some products from check."<<endl;
     }
 };
 

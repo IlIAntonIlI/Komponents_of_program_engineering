@@ -17,37 +17,37 @@ public:
                 listOfProducts[code].exist=true;
          }
      }
-     void FillDatabase(Database dataBaseProducts)
+     void FillDatabase()
      {
-    dataBaseProducts.listOfProducts[0].exist=true;
-    dataBaseProducts.listOfProducts[0].nameProduct="Fridge";
-    dataBaseProducts.listOfProducts[0].numOfProducts=3;
-    dataBaseProducts.listOfProducts[0].price=10000;
+    listOfProducts[0].exist=true;
+    listOfProducts[0].nameProduct="Fridge";
+    listOfProducts[0].numOfProducts=3;
+    listOfProducts[0].price=10000;
 
-    dataBaseProducts.listOfProducts[1].exist=true;
-    dataBaseProducts.listOfProducts[1].nameProduct="Microwave LG";
-    dataBaseProducts.listOfProducts[1].numOfProducts=2;
-    dataBaseProducts.listOfProducts[1].price=4000;
+    listOfProducts[1].exist=true;
+    listOfProducts[1].nameProduct="Microwave LG";
+    listOfProducts[1].numOfProducts=2;
+    listOfProducts[1].price=4000;
 
-    dataBaseProducts.listOfProducts[2].exist=false;
-    dataBaseProducts.listOfProducts[2].nameProduct="NoteBook HP";
-    dataBaseProducts.listOfProducts[2].numOfProducts=0;
-    dataBaseProducts.listOfProducts[2].price=15000;
+    listOfProducts[2].exist=false;
+    listOfProducts[2].nameProduct="NoteBook HP";
+    listOfProducts[2].numOfProducts=0;
+    listOfProducts[2].price=15000;
 
-    dataBaseProducts.listOfProducts[3].exist=true;
-    dataBaseProducts.listOfProducts[3].nameProduct="Microwave Lenovo";
-    dataBaseProducts.listOfProducts[3].numOfProducts=2;
-    dataBaseProducts.listOfProducts[3].price=3500;
+    listOfProducts[3].exist=true;
+    listOfProducts[3].nameProduct="Microwave Lenovo";
+    listOfProducts[3].numOfProducts=2;
+    listOfProducts[3].price=3500;
 
-    dataBaseProducts.listOfProducts[4].exist=true;
-    dataBaseProducts.listOfProducts[4].nameProduct="Coffee maker";
-    dataBaseProducts.listOfProducts[4].numOfProducts=4;
-    dataBaseProducts.listOfProducts[4].price=1000;
+    listOfProducts[4].exist=true;
+    listOfProducts[4].nameProduct="Coffee maker";
+    listOfProducts[4].numOfProducts=4;
+    listOfProducts[4].price=1000;
 
-    dataBaseProducts.listOfProducts[5].exist=true;
-    dataBaseProducts.listOfProducts[5].nameProduct="Stove";
-    dataBaseProducts.listOfProducts[5].numOfProducts=1;
-    dataBaseProducts.listOfProducts[5].price=7000;
+    listOfProducts[5].exist=true;
+    listOfProducts[5].nameProduct="Stove";
+    listOfProducts[5].numOfProducts=1;
+    listOfProducts[5].price=7000;
 
     }
 

@@ -32,6 +32,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="CasaController.h" />
+		<Unit filename="CasaPrinter.h" />
+		<Unit filename="CashAcceptDevice.h" />
+		<Unit filename="Database.h" />
+		<Unit filename="Display.h" />
+		<Unit filename="Product.h" />
+		<Unit filename="Scanner.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
