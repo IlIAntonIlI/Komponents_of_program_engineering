@@ -11,14 +11,14 @@ public:
         if (database.isProductExist())
         {
             Product bufer;
-            bufer.name = database.getName(code);
+            bufer.nameProduct = database.getName(code);
             bufer.price = datebase.getPrice(code);
+            check.push_back(bufer);
             datebase.changeNumOfProducts(code,true);
         }
         else
         {
-            display.existMessage();
-
+            display.existMessage(false);
         }
    }
 
