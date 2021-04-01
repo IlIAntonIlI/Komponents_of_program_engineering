@@ -6,7 +6,7 @@ class CasaController
     int code;
 public:
    vector<Product> check;
-   void addProductToCheck(int code, Database database, Display display)
+   void addProductToCheck(int code, Database &database, Display display)
    {
         if (database.isProductExist(code))
         {
@@ -23,7 +23,7 @@ public:
         display.showCheck(check);
    }
 
-   void deleteProductFromCheck (int numInCheck, Database database, Display display)
+   void deleteProductFromCheck (int numInCheck, Database &database, Display display)
    {
         auto iter = check.cbegin();
         check.erase(iter+numInCheck-1);
