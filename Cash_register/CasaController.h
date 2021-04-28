@@ -25,7 +25,13 @@ public:
 
    void deleteProductFromCheck (int numInCheck, Database &database, Display display)
    {
+        int code;
         auto iter = check.cbegin();
+        for(int i=0; i<=5;i++)
+        {
+            if(check[numInCheck-1].nameProduct==database.getNameProduct(i))
+                code=i;
+        }
         check.erase(iter+numInCheck-1);
         database.changeNumOfProducts(code,false);
         display.showCheck(check);
