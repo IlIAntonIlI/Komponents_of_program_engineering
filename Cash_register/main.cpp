@@ -49,7 +49,7 @@ int main()
             code=scan.readCode();
             system("cls");
             cout<<"The price of "<<dataBaseProducts.getNameProduct(code)<<": "<<dataBaseProducts.getPrice(code)<<" UAH"<<endl<<endl;
-            cout<<"Write: \n 0 - scan price \n 1 - create a check \n-1 - end program"<<endl;
+            cout<<"Write: \n 0 - scan price \n 1 - create a check \n 2 - help\n-1 - end program"<<endl;
             cin>>flag;
         }
         else if (flag==1)
