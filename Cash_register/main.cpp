@@ -22,8 +22,10 @@ int main()
     Scanner scan;
     cout<<"Write: \n 0 - scan price \n 1 - create a check \n 2 - help\n-1 - end program"<<endl;
     cin>>flag;
-    while(flag>=0)
+    while(flag!=-1)
     {
+        if((flag>3)||(flag<-1))
+            flag=3;
         int flag3=-1;
         if(flag==2)
         {

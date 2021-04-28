@@ -5,7 +5,7 @@ public:
         int sum=0;
         for(int i=0; i<check.size();i++)
             sum=sum+check[i].price;
-        cout<<"Your balance: "<<cash-sum<<endl;
+        cout<<"Your change: "<<cash-sum<<endl;
         check.clear();
     }
 };

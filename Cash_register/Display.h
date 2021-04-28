@@ -51,7 +51,7 @@ public:
                 cout<<"5)In this step, enter the money in the cash register.\n\n";
                 cout<<"    5.1)If entered enough money, your payment has been made successfully and you can take the check.\n\n";
                 cout<<"    5.2)If entered not enough money, you need to add money (choose \"1\") or delete some products from check (choose\"0\").\n\n";
-                cout<<"        5.2.1) If you choose \"1\", your payment has been made successfully and you can take the check.\n\n";
+                cout<<"        5.2.1) If you choose \"1\", enter more money.\n\n";
                 cout<<"        5.2.2) If you choose \"0\", write the number of product you want to delete.\n\n";
 
             }
