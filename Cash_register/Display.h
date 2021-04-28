@@ -31,7 +31,7 @@ public:
     }
     void noEnoughMoney ()
     {
-        cout<<"No enough money, pls enter more money or delete some products! Write 1 - enter more money or 0 - delete some products from check."<<endl;
+        cout<<"No enough money, pls enter more money or delete some products! \n1 - enter more money \n0 - delete some products from check."<<endl;
     }
 };
 
