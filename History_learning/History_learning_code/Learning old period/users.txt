@@ -1,0 +1,12 @@
+Ivan
+5
+Vasyl
+3
+Petro
+1
+Oksana
+2
+Andriy
+4
+Illia
+2
